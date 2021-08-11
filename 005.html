@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- para mudar o icone da pagina -->
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXEU5qVKy4ovamn_KTaAgRJIoM7XTtegqMzRtYmStG13-E-4B_IHOfhAmT5Su_1NpWXs&usqp=CAU"
+      type="image/x-icon"/>
+
+    <title>Seu destino só depende disso!</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      p {
+        font: normal 20pt arial;
+      }
+      .espaco {
+        margin-top: 90px;
+      }
+
+      .imagem img { 
+        max-width:250px;
+        max-height:250px;
+        width: auto;
+        height: auto 
+          }
+
+      .bg{
+          background-size    : cover;
+          background-repeat  : no-repeat;
+          background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <div class="imagem">
+      <img src="cara_enrugada.jpg" /> 
+   </div>
+    <H4>Decifra-me</H4>
+    <div class="espaco">
+      Senha <input type="text" name="senhas" id="chapeu seletor"/>
+      <input type="button" value="Verificar" onclick="redirecionar()" />
+    </div>
+    <script>
+      function redirecionar() {
+        let senha = document.getElementById("chapeu seletor");
+        if (senha.value == "chapeu seletor") {
+          window.location.href = "../JOGO%20DA%20DORY/006.html";
+        } else {
+          alert("Senha incorreta");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href=""
+      type="image/x-icon"/>
+    <title>Request</title>
+
+
+    <style>
+      body{
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .contener{
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        -webkit-margin-before: 2em;
+        -webkit-margin-after: 2em;
+      }
+
+      h3{
+        color: white;
+        -webkit-margin-after: 5em;
+      }
+          
+    </style>
+  </head>
+
+  <body>
+    <h3>Leia os feitiços corretamente, é LeviÔsa...</h3>
+    <img src="Acrostico.gif" />
+    <div class="contener">
+      
+      <p>Quietus <br>
+         Uediuósi <br>
+        Expectro Patronum <br>
+        Relashio <br>   
+
+
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Nox <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Avis <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Mortis Locomotor <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Opugno <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Riddikulus <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Alohomora <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Reparo <br></p>
+
+
+        <p> 
+          &nbsp&nbsp&nbsp&nbsp&nbsp Cofringo <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Opugno <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Morsmordre <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Imperio <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Gemino <br>
+          &nbsp&nbsp&nbsp&nbsp&nbsp Obliviate <br></p>
+      </p>      
+   </div>
+      
+    <div class="espaco">
+      Digite sua Resposta <input type="text" name="senhas" id="sim" />-
+      <input type="button" value="Verificar" onclick="redirecionar()" />
+    </div>
+    <script>
+      function redirecionar() {
+        let senha = document.getElementById("sim");
+        if (senha.value == "sim") { 
+        window.location.href = "../JOGO%20DA%20DORY/fim.html";
+      } else if (senha.value == "nao") {
+        window.location.href = "../JOGO%20DA%20DORY/fimN.html";
+      }else{
+        alert("Trouxa, escreva a sua resposta"); 
+      }
+    }
+    </script>
+  </body>
+</html>
+ 

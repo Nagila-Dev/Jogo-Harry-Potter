@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">                                                    <!--PRONTOOOOOOOOOOOOO-->                 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1k-hzwTa8JKnUBmNZK_aJjPkZCED0xM74g&usqp=CAU"
+      type="image/x-icon"/>
+
+    <title>Esse Presidente nao Lago</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      p {
+        font: normal 12pt arial;  
+        color: black;
+      }                                           
+      .espaco{
+        margin-top: 90px;
+      }
+      .imagem img { 
+        max-width:550px;
+        max-height:550px;
+        width: auto;
+        height: auto 
+          }
+    </style>
+  </head>
+  <body>
+    <div class="imagem">
+        <img src="Lago Negro.jpg" /> 
+    </div>
+    <p>Procure fundo</p>
+    <div class="espaco">
+      Senha <input type="text" name="senhas" id="lula gigante" />
+      <input type="button" value="Verificar" onclick="redirecionar()" />
+    </div>
+    <script>
+      function redirecionar() {
+        let senha = document.getElementById("lula gigante");
+        if (senha.value == "lula gigante") { 
+        window.location.href = "../JOGO%20DA%20DORY/004.html";   
+      } else {
+          alert("Senha incorreta");
+      }
+    }
+    </script>
+  </body>
+</html>
